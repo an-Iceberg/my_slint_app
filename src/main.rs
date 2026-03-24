@@ -5,7 +5,7 @@ slint::include_modules!();
 
 fn main() -> Result<(), slint::PlatformError>
 {
-  let main_window = Main::new()?;
+  let main_window = MainWindow::new()?;
 
   // NOTE: this is one way for interaction between the front- and backend. There are other options tho.
   let bridge = main_window.global::<Bridge>();
