@@ -8,3 +8,7 @@ be learning Slint.
 how to interface between frontend and backend
 - https://docs.slint.dev/latest/docs/rust/slint/docs/generated_code/struct.SampleComponent
 - https://github.com/slint-ui/slint/blob/master/examples/7guis/crud.rs
+- https://github.com/slint-ui/slint/discussions/6343
+
+Required reading:
+- https://docs.slint.dev/latest/docs/slint/guide/language/coding/name-resolution/

@@ -1,16 +1,6 @@
-component MemoryTile inherits Rectangle
-{
-  width: 64px;
-  height: 64px;
-  background: #3960D5;
+export { Bridge } from "bridge.slint";
 
-  Image
-  {
-    source: @image-url("icons/bus.png");
-    width: parent.width;
-    height: parent.height;
-  }
-}
+import { MemoryTile } from "memory-tile.slint";
 
 export component MainWindow inherits Window
 {
