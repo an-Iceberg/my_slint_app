@@ -5,7 +5,7 @@ slint::include_modules!();
 
 fn main() -> Result<(), slint::PlatformError>
 {
-  let main_window = MainWindow::new()?;
+  let main_window = Main::new()?;
 
   // NOTE: this is one way for interaction between the front- and backend. There are other options tho.
   let bridge = main_window.global::<Bridge>();
@@ -14,7 +14,7 @@ fn main() -> Result<(), slint::PlatformError>
     println!("operation input: {val}");
     val * 2
   });
-  bridge.set_value(42);
+  bridge.set_value(bridge.invoke_operation(42));
 
   bridge.invoke_operation(bridge.get_value());
 
